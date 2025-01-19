@@ -16,6 +16,13 @@ func TestFizzBuzz_returns_Fizz_when_divisible_by_3(t *testing.T) {
 	}
 }
 
+func TestFizzBuzz_returns_Buzz_when_5(t *testing.T) {
+	want := "Buzz"
+	got := FizzBuzz(5)
+	assertEquals(got, want, t)
+
+}
+
 func assertEquals(got string, want string, t *testing.T) {
 	if got != want {
 		t.Errorf("Expected got: %v to equal want: %v", got, want)
