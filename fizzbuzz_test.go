@@ -16,13 +16,6 @@ func TestFizzBuzz_returns_Fizz_when_divisible_by_3(t *testing.T) {
 	}
 }
 
-func TestFizzBuzz_returns_Buzz_when_5(t *testing.T) {
-	want := "Buzz"
-	got := FizzBuzz(5)
-	assertEquals(got, want, t)
-
-}
-
 func TestFizzBuzz_returns_Buzz_when_divisible_by_5(t *testing.T) {
 	testCases := []int{5, 10, 20, 25}
 	for _, in := range testCases {
