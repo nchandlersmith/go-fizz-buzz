@@ -8,12 +8,6 @@ func TestFizzBuzz_returns_integer_as_string(t *testing.T) {
 	assertEquals(got, want, t)
 }
 
-func TestFizzBuzz_returns_Fizz_when_3(t *testing.T) {
-	want := "Fizz"
-	got := FizzBuzz(3)
-	assertEquals(got, want, t)
-}
-
 func TestFizzBuzz_returns_Fizz_when_divisible_by_3(t *testing.T) {
 	test_cases := []int{3, 6, 9, 12}
 	for _, in := range test_cases {
