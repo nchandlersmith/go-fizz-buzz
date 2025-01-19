@@ -6,6 +6,6 @@ func TestFizzBuzz_returns_integer_as_string(t *testing.T) {
 	want := "1"
 	got := FizzBuzz(1)
 	if got != want {
-		t.Errorf("TestFizzBuzz(1) = %v want %v", got, want)
+		t.Errorf("got: %v want: %v", got, want)
 	}
 }
