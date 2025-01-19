@@ -24,6 +24,14 @@ func TestFizzBuzz_returns_Buzz_when_divisible_by_5(t *testing.T) {
 	}
 }
 
+func TestFizzBuzz_returns_FizzBuzz_when_divisible_by_15(t *testing.T) {
+	testCases := []int{15, 30, 45, 60}
+	for _, in := range testCases {
+		got := FizzBuzz(in)
+		assertEquals(got, "FizzBuzz", t)
+	}
+}
+
 func assertEquals(got string, want string, t *testing.T) {
 	if got != want {
 		t.Errorf("Expected got: %v to equal want: %v", got, want)
